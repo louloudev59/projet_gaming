@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="700" height="130" viewBox="0 0 700 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shading" opacity="0.5" style="mix-blend-mode:overlay">
+<path d="M0 0H700V130H0V0Z" fill="url(#paint0_linear_0_83)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_83" x1="633.5" y1="43.55" x2="167.49" y2="-230.423" gradientUnits="userSpaceOnUse">
+<stop stop-color="#363F41"/>
+<stop offset="0.1875" stop-color="white"/>
+<stop offset="0.359375" stop-color="#E4E4E4"/>
+<stop offset="0.473958" stop-color="#394244"/>
+<stop offset="0.635417" stop-color="#3D4547"/>
+<stop offset="0.697917" stop-color="#F5F5F5"/>
+<stop offset="0.864583" stop-color="#373E40"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>

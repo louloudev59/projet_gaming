@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Bevel">
+<use xlink:href="#stroke0_0_47" fill="#9A2C22"/>
+<use xlink:href="#stroke0_0_47" fill="black" fill-opacity="0.4"/>
+</g>
+<defs>
+<path id="stroke0_0_47" d="M57 0L114 57L57 114L0 57L57 0ZM6.71751 57L57 107.283L107.282 57L57 6.71752L6.71751 57Z" fill-rule="evenodd" clip-rule="evenodd"/>
+</defs>
+</svg>

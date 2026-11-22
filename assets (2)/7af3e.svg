@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Outer Stroke Decoration" d="M60 0L120 60L60 120L0 60L60 0ZM7.07107 60L60 112.929L112.929 60L60 7.07107L7.07107 60Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint0_linear_0_80)" fill-opacity="0.2"/>
+<defs>
+<linearGradient id="paint0_linear_0_80" x1="61.7918" y1="7.24139" x2="57.0137" y2="7.24139" gradientUnits="userSpaceOnUse">
+<stop offset="0.331731"/>
+<stop offset="0.341346" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

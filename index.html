@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucien le voyageur</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card-stage" tabindex="-1">
+      <div class="top-controls" aria-label="Déplacements vers le haut">
+        <button class="nav-arrow nav-arrow--up" aria-label="Afficher la carte de Loup" type="button" data-direction="up">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+        <button class="nav-arrow nav-arrow--up" aria-label="Afficher la carte de Loup" type="button" data-direction="up">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="side-controls side-controls--left" aria-label="Déplacements vers la gauche">
+        <button class="nav-arrow nav-arrow--left" aria-label="Afficher la carte de François" type="button" data-direction="left">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+        <button class="nav-arrow nav-arrow--left" aria-label="Afficher la carte de François" type="button" data-direction="left">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="card-motion">
+        <article class="fantasy-card" aria-label="Carte de Lucien le voyageur">
+          <div class="card-flipper">
+            <div class="card-face card-face--front">
+              <div class="card-surface" aria-hidden="true">
+                <div class="card-color"></div>
+                <img class="card-texture" src="assets/d9ceb.png" alt="" />
+                <img class="card-frame" src="assets/b8f96.svg" alt="" />
+              </div>
+
+              <button
+                class="art-panel"
+                aria-label="Ouvrir le popup Travail de groupe"
+                aria-haspopup="dialog"
+                aria-controls="project-dialog-travail-de-groupe"
+                type="button"
+              >
+                <img class="art-image" src="assets/7bcc6.png" alt="Un astronaute solitaire assis face à une planète" />
+                <span class="art-invitation">Cliquer pour découvrir le projet</span>
+              </button>
+
+              <header class="name-scroll">
+                <img aria-hidden="true" src="assets/7a853.png" alt="" />
+                <h1>Lucien le voyageur</h1>
+              </header>
+
+              <div class="value-plaque" aria-label="Valeur 4">
+                <img class="plaque-base" src="assets/66c25.svg" alt="" />
+                <img class="plaque-bevel" src="assets/54e33.svg" alt="" />
+                <img class="plaque-border" src="assets/66dd5.svg" alt="" />
+                <img class="plaque-decoration" src="assets/7af3e.svg" alt="" />
+                <span>4</span>
+                <img class="plaque-symbol" src="assets/f6d32.svg" alt="" />
+              </div>
+
+              <section class="details-panel">
+                <div class="parchment" aria-hidden="true">
+                  <img class="parchment-sheet" src="assets/5aec5.png" alt="" />
+                  <img class="parchment-mark" src="assets/7d072.svg" alt="" />
+                </div>
+
+                <div class="type-bar">
+                  <img src="assets/3417e.svg" alt="" />
+                  <img src="assets/f7c52.svg" alt="" />
+                  <img src="assets/b40de.svg" alt="" />
+                  <img src="assets/a150f.svg" alt="" />
+                  <h2>Humain Solitaire</h2>
+                </div>
+
+                <div class="ability">
+                  <h3>Atout :</h3>
+                  <p>Tant qu’il est sur le terrain, ses alliés détruit reviennent dans la pile de carte du joueur</p>
+                </div>
+
+                <p class="flavor">Il explore le cosmos à la recherche de son âme soeur</p>
+
+                <div class="mini-mark" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <i></i>
+                </div>
+              </section>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="side-controls side-controls--right" aria-label="Déplacements vers la droite">
+        <button class="nav-arrow nav-arrow--right" aria-label="Afficher la carte d’Eugene" type="button" data-direction="right">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+        <button class="nav-arrow nav-arrow--right" aria-label="Afficher la carte d’Eugene" type="button" data-direction="right">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="bottom-controls" aria-label="Déplacements vers le bas">
+        <button class="nav-arrow nav-arrow--down" aria-label="Afficher la carte de Louis" type="button" data-direction="down">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+        <button class="nav-arrow nav-arrow--down" aria-label="Afficher la carte de Louis" type="button" data-direction="down">
+          <img src="assets/f0058.svg" alt="" />
+        </button>
+      </div>
+
+      <p class="sr-only" aria-live="polite"></p>
+    </main>
+
+    <template id="project-dialog-template">
+    <dialog class="project-dialog" aria-labelledby="project-dialog-title">
+      <header class="project-dialog__header">
+        <div class="project-dialog__heading">
+          <span class="project-dialog__eyebrow">Dossier du projet</span>
+          <h2 id="project-dialog-title">Travail de groupe</h2>
+        </div>
+        <button class="project-dialog__close" type="button" aria-label="Fermer la fenêtre">×</button>
+      </header>
+      <div class="project-dialog__content">
+        <section>
+          <h3>1. Quelle a été la genèse de votre projet ?</h3>
+          <p>Quelles ont été vos premières pistes de réflexion qui vous ont permis de lancer votre projet (ex : pistes imaginées/abandonnées + pourquoi ?) :</p>
+          <p>La colonne vertébrale du projet a été choisie dès le début. Nous avons hésité avec un jeu uniquement de plateau de “conquête” avec des plaques hexagonales mais nous nous sommes rendu compte que cela n’allait pas être viable car trop ennuyant, répétitif et certainement déjà existant.</p>
+          <p>Nous sommes donc partie sur l’idée de François, un jeu de plateau et de cartes car globalement, on aime tous ça et c’est plus simple de travailler quand on aime le projet</p>
+        </section>
+        <section>
+          <h3>2. Expliquer les caractéristiques choisies et pourquoi ces choix</h3>
+          <p>Les caractéristiques de notre jeu allie le jeu de carte et le jeu de plateau et pour se faire il fallait créer un système de dégât en fonction du positionnement des cartes donc l’idée des “pics” pour montrer la direction des dégâts</p>
+        </section>
+        <section>
+          <h3>3. Quelle serait la phrase d’accroche de votre jeu pour donner envie de l’acheter ?</h3>
+          <p>“Au cœur de la Terre, forge ton destin.”</p>
+        </section>
+        <section>
+          <h3>4. Expliquer en détail chaque élément du jeu et son intérêt.</h3>
+          <p>Cette question rejoint la deuxième mais on a des cartes créatures a posé afin de créer un aspect stratégique avec plusieurs pouvoirs et plusieurs atouts et des barrettes pour faire les pics qu’on pourra accrocher au carte afin de visualiser où vont les dégâts</p>
+        </section>
+        <section>
+          <h3>5. Rédiger la règle du jeu complète et détaillée.</h3>
+          <div class="rules-document">
+            <div class="rules-document__toolbar">
+              <div>
+                <span class="rules-document__eyebrow">Document officiel · 8 pages</span>
+                <p>Règles complètes du jeu</p>
+              </div>
+              <a class="rules-document__download" href="Regles_jeu_cartes_plateau.pdf" download>
+                Télécharger le PDF
+              </a>
+            </div>
+            <object
+              class="rules-document__viewer"
+              data="Regles_jeu_cartes_plateau.pdf#view=FitH"
+              type="application/pdf"
+              aria-label="Règle complète du jeu sur 8 pages"
+            >
+              <p>
+                Votre navigateur ne peut pas afficher le PDF intégré.
+                <a href="Regles_jeu_cartes_plateau.pdf" target="_blank" rel="noopener">Ouvrir les règles dans un nouvel onglet</a>.
+              </p>
+            </object>
+          </div>
+        </section>
+        <section>
+          <h3>6. À quel prix pourrait être vendu votre jeu ?</h3>
+          <p>Expliquer pourquoi et positionner votre jeu sur le marché en le comparant à 3 jeux de catégories similaires selon vous.</p>
+          <p>15€ jeu de base et 3€ par booster car dans le marché ce prix se situe en dessous des géants qui se rapproche d’un type de jeu deck comme pokemon yu gi oh ou magic et un prix plus bas sera plus attractif afin de se créer une fan base ce qui est crucial pour qu’un jeu survive longtemps</p>
+        </section>
+        <section>
+          <h3>7. Proposer un diagramme type PERT/AoN</h3>
+          <p>Planification complète du projet, avec les 26 activités, leurs prédécesseurs et le diagramme AON des deux semestres.</p>
+          <div class="planning-document">
+            <div class="planning-document__toolbar">
+              <div>
+                <span class="planning-document__eyebrow">Document officiel · 4 pages</span>
+                <p>Planification du projet</p>
+              </div>
+              <a class="planning-document__download" href="Planification du projet et besoins de production (1).pdf" download>
+                Télécharger le PDF
+              </a>
+            </div>
+            <object
+              class="planning-document__viewer"
+              data="Planification du projet et besoins de production (1).pdf#view=FitH"
+              type="application/pdf"
+              aria-label="Planification du projet et besoins de production sur 4 pages"
+            >
+              <p>
+                Votre navigateur ne peut pas afficher le PDF intégré.
+                <a href="Planification du projet et besoins de production (1).pdf" target="_blank" rel="noopener">
+                  Ouvrir le document dans un nouvel onglet
+                </a>.
+              </p>
+            </object>
+          </div>
+        </section>
+        <section>
+          <h3>8. Identifier et lister vos besoins pour une production en grande quantité</h3>
+          <p>Le PDF ci-dessus présente également les besoins de fabrication, les matériaux, le rangement, la sécurité et les conditions de commercialisation mais voici tout de même un court résumé</p>
+          <div class="production-summary">
+            <article>
+              <strong>Contenu</strong>
+              <span>60 cartes, 240 pics, 12 pics dorés, 87 jetons, 1 jeton Hasard</span>
+            </article>
+            <article>
+              <strong>Boîte</strong>
+              <span>Carton renforcé, environ 10 × 20 × 19,5 cm</span>
+            </article>
+            <article>
+              <strong>Livret</strong>
+              <span>Papiers couchés 120 à 150 g/m², 8 pages environ</span>
+            </article>
+            <article>
+              <strong>Production</strong>
+              <span>Droits, normes EN 71, accessibilité, impression et distribution</span>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h3>Pour voir les parties individuelles, merci de cliquer sur les triangles</h3>
+        </section>
+      </div>
+    </dialog>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
