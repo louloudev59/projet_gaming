@@ -67,6 +67,7 @@
 :root { color: #111; background: #fff; font-synthesis: none; }
 * { box-sizing: border-box; }
 html, body { width: 100%; min-height: 100%; margin: 0; }
+html { zoom: 75%; }
 body { min-width: 320px; min-height: 100dvh; overflow-x: hidden; overflow-y: auto; background: #fff; }
 button { -webkit-tap-highlight-color: transparent; }
 .card-stage {
