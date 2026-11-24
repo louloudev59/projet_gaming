@@ -180,14 +180,24 @@ function createBackDialog(variant) {
       } else if (number === "11" && variant.id === "louis") {
         response.textContent =
           "J’ai réalisé entièrement le design des cartes et de la boîte. J’ai aussi montré à mes camarades comment utiliser le logiciel Figma pour m’aider à faire les cartes. J’ai effectué des recherches sur les images et j’ai rédigé des listes de cartes au préalable afin de choisir celles que nous allions garder et les atouts que nous allions leur attribuer.";
-      } else if (number === "10" && variant.id === "louis") {
+      } else if (number === "11" && variant.id === "eugene") {
+        response.textContent =
+          "J’ai recherché des images et des noms adaptés à notre projet sous différents angles (humoristique, créatif, fantastique…) afin de le dynamiser et de le rendre encore plus captivant.";
+      } else if (number === "10" && ["louis", "eugene"].includes(variant.id)) {
         const gallery = document.createElement("div");
         gallery.className = "project-dialog__swot-gallery";
 
-        [
-          ["swot_louis.png", "SWOT Analysis — analyse globale"],
-          ["swot2louis.png", "Faiblesses — constat et pistes de solutions"],
-        ].forEach(([fileName, caption]) => {
+        const swotImages = variant.id === "eugene"
+          ? [
+              ["swoteugene.png", "Analyse SWOT — analyse globale"],
+              ["swot2eugene.png", "Opportunités — constats et pistes d’exploitation"],
+            ]
+          : [
+              ["swot_louis.png", "SWOT Analysis — analyse globale"],
+              ["swot2louis.png", "Faiblesses — constat et pistes de solutions"],
+            ];
+
+        swotImages.forEach(([fileName, caption]) => {
           const figure = document.createElement("figure");
 
           const openButton = document.createElement("button");
