@@ -177,12 +177,35 @@ function createBackDialog(variant) {
       if (number === "11" && variant.id === "francois") {
         response.textContent =
           "Inventeur, réalisateur, concepteur. Je complète le cahier des charges, je me pose des questions et j’essaie d’y répondre. Je crée aussi des cartes, mais mon implication est mineure dans ce rôle comparée à Louis et à Loup.";
+      } else if (number === "11" && variant.id === "loup") {
+        response.textContent =
+          "J'ai créé les règles du jeu et je les ai optimisées pour qu'elles soient claires et complètes. J'ai aussi créé le système d'équilibrage : chaque carte doit valoir exactement 8 points (PV + pics + puissance de l'atout). Ce système me permet de vérifier les cartes créées par mes collègues et de corriger celles qui sont trop fortes ou trop faibles.";
       } else if (number === "11" && variant.id === "louis") {
         response.textContent =
           "J’ai réalisé entièrement le design des cartes et de la boîte. J’ai aussi montré à mes camarades comment utiliser le logiciel Figma pour m’aider à faire les cartes. J’ai effectué des recherches sur les images et j’ai rédigé des listes de cartes au préalable afin de choisir celles que nous allions garder et les atouts que nous allions leur attribuer.";
       } else if (number === "11" && variant.id === "eugene") {
         response.textContent =
           "J’ai recherché des images et des noms adaptés à notre projet sous différents angles (humoristique, créatif, fantastique…) afin de le dynamiser et de le rendre encore plus captivant.";
+      } else if (number === "10" && variant.id === "loup") {
+        response.innerHTML = `
+          <div class="rules-document">
+            <div class="rules-document__toolbar">
+              <div>
+                <span class="rules-document__eyebrow">Document individuel · SWOT et analyse détaillée</span>
+                <p>SWOT de Loup</p>
+              </div>
+              <a class="rules-document__download" href="SWOT_Loup.docx" download>
+                Télécharger le document
+              </a>
+            </div>
+            <iframe
+              class="rules-document__viewer"
+              src="SWOT_Loup_apercu.html"
+              title="Aperçu intégré du SWOT de Loup"
+              loading="lazy"
+            ></iframe>
+          </div>
+        `;
       } else if (number === "10" && ["louis", "eugene"].includes(variant.id)) {
         const gallery = document.createElement("div");
         gallery.className = "project-dialog__swot-gallery";
