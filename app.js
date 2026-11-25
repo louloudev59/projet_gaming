@@ -206,19 +206,24 @@ function createBackDialog(variant) {
             ></iframe>
           </div>
         `;
-      } else if (number === "10" && ["louis", "eugene"].includes(variant.id)) {
+      } else if (number === "10" && ["francois", "louis", "eugene"].includes(variant.id)) {
         const gallery = document.createElement("div");
         gallery.className = "project-dialog__swot-gallery";
+        if (variant.id === "francois") {
+          gallery.classList.add("project-dialog__swot-gallery--single");
+        }
 
-        const swotImages = variant.id === "eugene"
-          ? [
-              ["swoteugene.png", "Analyse SWOT — analyse globale"],
-              ["swot2eugene.png", "Opportunités — constats et pistes d’exploitation"],
-            ]
-          : [
-              ["swot_louis.png", "SWOT Analysis — analyse globale"],
-              ["swot2louis.png", "Faiblesses — constat et pistes de solutions"],
-            ];
+        const swotImages = variant.id === "francois"
+          ? [["swotfrancois.png", "Analyse SWOT — jeu de cartes et de plateau"]]
+          : variant.id === "eugene"
+            ? [
+                ["swoteugene.png", "Analyse SWOT — analyse globale"],
+                ["swot2eugene.png", "Opportunités — constats et pistes d’exploitation"],
+              ]
+            : [
+                ["swot_louis.png", "SWOT Analysis — analyse globale"],
+                ["swot2louis.png", "Faiblesses — constat et pistes de solutions"],
+              ];
 
         swotImages.forEach(([fileName, caption]) => {
           const figure = document.createElement("figure");
