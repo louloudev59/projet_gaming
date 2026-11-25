@@ -209,12 +209,12 @@ function createBackDialog(variant) {
       } else if (number === "10" && ["francois", "louis", "eugene"].includes(variant.id)) {
         const gallery = document.createElement("div");
         gallery.className = "project-dialog__swot-gallery";
-        if (variant.id === "francois") {
-          gallery.classList.add("project-dialog__swot-gallery--single");
-        }
 
         const swotImages = variant.id === "francois"
-          ? [["swotfrancois.png", "Analyse SWOT — jeu de cartes et de plateau"]]
+          ? [
+              ["swotfrancois.png", "Analyse SWOT — jeu de cartes et de plateau"],
+              ["swotfrancois2.webp", "Analyse SWOT — les forces"],
+            ]
           : variant.id === "eugene"
             ? [
                 ["swoteugene.png", "Analyse SWOT — analyse globale"],
